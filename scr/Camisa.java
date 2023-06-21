@@ -3,8 +3,8 @@ public class Camisa extends Roupa{
     private String tipo_manga;
     private boolean gola;
 
-    public Camisa(String nome, String cor, String tamanho, double preco, String tipo_manga, boolean gola){
-        super(nome, cor, preco, tamanho);
+    public Camisa(String nome, String cor, String tamanho, double preco, String tipo_manga, boolean gola, String imagem, String descricao){
+        super(nome, cor, preco, tamanho,imagem, descricao);
         this.tipo_manga = tipo_manga;
         this.gola = gola;
     }

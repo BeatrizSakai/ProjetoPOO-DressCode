@@ -3,8 +3,8 @@ package scr;
 public class Roupa extends Produto {
     private String tamanho;
 
-    public Roupa(String nome, String cor, double preco, String tamanho) {
-        super(nome, cor, preco);
+    public Roupa(String nome, String cor, double preco, String tamanho, String imagem, String descricao) {
+        super(nome, cor, preco, imagem, descricao);
         this.tamanho = tamanho;
     }
     
