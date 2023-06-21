@@ -5,22 +5,24 @@ import java.util.ArrayList;
 
 public class Carrinho {
     public static Carrinho carrinho;
-    private ArrayList<Object> produtos;
-    private double valorTotal;
+    private static ArrayList<Object> produtos;
+    private static double valorTotal;
+
     public Carrinho() {
         produtos = new ArrayList<>();
-        this.valorTotal = 0;
+        Carrinho.valorTotal = 0;
     }
 
     public void adicionaProduto(Produto produto) {
         produtos.add(produto);
         System.out.println("O " + produto.getNome() + " foi adicionado com sucesso!");
     }
-    public void calculaValorTotal() {
+    public static double calculaValorTotal() {
         for (var produto: produtos) {
             valorTotal += ((Produto) produto).getPreco();
         }
-        System.out.println("o valor total é: " + valorTotal);
+        System.out.println("o valor da sua compra é: " + valorTotal);
+        return valorTotal;
     }
 
     public void finalizarCompra(){
