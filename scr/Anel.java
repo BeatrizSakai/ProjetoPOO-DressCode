@@ -4,8 +4,8 @@ public class Anel extends Acessorio{
     private String pedra;
     private int aro;
     
-    public Anel(String nome,String cor, String material, String pedra, int aro, double preco){
-        super(nome, cor, preco, material);
+    public Anel(String nome,String cor, String material, String pedra, int aro, double preco, String imagem, String descricao){
+        super(nome, cor, preco, material, imagem, descricao);
         this.pedra = pedra;
         this.aro = aro;
     }

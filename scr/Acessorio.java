@@ -3,8 +3,8 @@ package scr;
 public class Acessorio extends Produto{
     private String material;
 
-    public Acessorio(String nome, String cor, double preco, String material) {
-        super(nome, cor, preco);
+    public Acessorio(String nome, String cor, double preco, String material, String imagem, String descricao) {
+        super(nome, cor, preco, imagem, descricao);
         this.material = material;
     }
     
@@ -19,11 +19,6 @@ public class Acessorio extends Produto{
     @Override
     public void escolherProduto() {
         System.out.println("Escolhendo sua peça de acessorio...");
-    }
-
-    @Override
-    public void comprarProduto() {
-        System.out.println("Finalizando a compra da sua peça de acessorio...");
     }
 
     @Override

@@ -3,8 +3,8 @@ package scr;
 public class Colar extends Acessorio{
     private String comprimento;
 
-    public Colar(String nome, String cor,double preco, String material, String comprimento){
-        super(nome, cor,preco, material );
+    public Colar(String nome, String cor,double preco, String material, String comprimento, String imagem, String descricao){
+        super(nome, cor,preco, material, imagem, descricao);
         this.comprimento = comprimento;
     }
 
