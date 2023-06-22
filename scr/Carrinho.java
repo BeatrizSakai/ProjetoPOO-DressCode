@@ -1,6 +1,5 @@
 package scr;
 import java.util.ArrayList;
-import scr.LimiteProdutosExcedidoException;
 
 public class Carrinho {
     public static Carrinho carrinho;
