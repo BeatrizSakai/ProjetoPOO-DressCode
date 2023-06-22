@@ -5,16 +5,14 @@ import java.util.Random;
 
 public class Pedido { 
     public static List<Object> finalizarPedido() {
-    double valor_pedido = Carrinho.calculaValorTotal();
-
     List<Object> lista = new ArrayList<>();
     Random random = new Random();
-    int id = random.nextInt();
-    lista.add(id);
-    lista.add(valor_pedido);
-    lista.add(",");
+    int id = random.nextInt(10);
+    double valor_pedido = Carrinho.calculaValorTotal();
+    String idEValor = id + "," + valor_pedido;
+    lista.add(idEValor);
     return lista;
-    }
+}
 }
 
 
