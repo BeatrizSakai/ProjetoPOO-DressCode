@@ -38,7 +38,9 @@ public class InterfaceDressCode extends JFrame {
     private List<Sandalia> sandalias;
     private List<JLabel> labelSandalias;
     private int i;
-
+    private List<Bota> botas;
+    private List<JLabel> labelBotas;
+   
     
     public InterfaceDressCode() {
         setTitle("DRESSCODE");
@@ -101,6 +103,13 @@ public class InterfaceDressCode extends JFrame {
         sandalias.add(new Sandalia("Sandalia Rasteira", "Preto", 36, 89.90, "Tiras", "Rasteiro","imagens\\sandaliarasteira.png","Sandalia Rasteira Confortável"));
         sandalias.add(new Sandalia("Sandalia Salto Alto", "Vermelho", 38, 159.90, "Tiras", "Alto","imagens\\sandaliasalto1.png", "Sandalia Salto Alto Elegante"));
         labelSandalias = new ArrayList<>();
+
+        botas = new ArrayList<>();
+        botas.add(new Bota("Bota Branca", 37, "Branca", 200.00, "Cano Médio", "Alto", "imagens\\botabranca.png", "Bota Branca "));
+        botas.add(new Bota("Coturno Branco", 36, "Branco", 250.00, "Cano Baixo", "Baixo", "imagens\\botacoturno.png", "Bota Preta Cano Médio"));
+        botas.add(new Bota("Bota Preta", 37, "Preta", 300.00, "Cano Alto", "Baixo", "imagens\\botalonga.png", "Bota Preta Cano Médio"));
+        botas.add(new Bota("Bota Marrom", 35, "Marrom", 150.00, "Cano Médio", "Baixo", "imagens\\botamarrom.png", "Bota Marrom Cano Médio"));
+        labelBotas = new ArrayList<>();
 
         JPanel painelPrincipal = new JPanel();
         painelPrincipal.setLayout(new BoxLayout(painelPrincipal, BoxLayout.PAGE_AXIS));
@@ -336,23 +345,40 @@ public class InterfaceDressCode extends JFrame {
         
         painelPrincipal.add(painelSandalias);
 
+                JPanel painelBotas = new JPanel();
+        painelBotas.setLayout(new FlowLayout(FlowLayout.LEFT));
+
+        for (Bota bota : botas) {
+            JLabel labelBota = new JLabel(new ImageIcon(bota.getImagem()));
+            labelBota.setHorizontalAlignment(SwingConstants.CENTER);
+            labelBotas.add(labelBota);
+
+            JPanel painelInformacoesBota = new JPanel();
+            painelInformacoesBota.setLayout(new GridLayout(4, 1));
+            painelInformacoesBota.add(new JLabel(bota.getDescricao()));
+            painelInformacoesBota.add(new JLabel("R$" + bota.getPreco()));
+            painelInformacoesBota.add(new JLabel(""));
+
+            JButton botaoComprarBota = new JButton("Comprar");
+            painelInformacoesBota.add(botaoComprarBota);
+
+            JPanel painelCompleto = new JPanel(new BorderLayout());
+            painelCompleto.add(labelBota, BorderLayout.CENTER);
+            painelCompleto.add(painelInformacoesBota, BorderLayout.SOUTH);
+
+            painelBotas.add(painelCompleto);
+        }
+
+        painelPrincipal.add(painelBotas);
+
 
         JScrollPane scrollPane = new JScrollPane(painelPrincipal);
         add(scrollPane);
 
         setVisible(true);
-
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                Carrinho carrinho = new Carrinho();   
-                carrinho.finalizarCompra();
-            }
-        });
     }
 
     public static void main(String[] args) {
-         
         new InterfaceDressCode();
     }
 }

@@ -1,17 +1,7 @@
 package scr;
 
 public class LimiteProdutosExcedidoException extends Exception {
-    private int limiteMaximo = 5;
-    
-
-    public LimiteProdutosExcedidoException(int limiteMaximo) {
-        super("Limite de produtos excedido. Apenas " + limiteMaximo + " produtos são permitidos.");
-        this.limiteMaximo = limiteMaximo;
-        limiteMaximo = 5;
-    }
-
-    public int getLimiteMaximo() {
-        return limiteMaximo;
+    public LimiteProdutosExcedidoException() {
+        super("Limite de produtos excedido. Apenas 5 produtos são permitidos.");
     }
 }
-
