@@ -1,19 +1,20 @@
 package scr;
+import java.awt.List;
 import java.util.ArrayList;
 
 
 
 public class Carrinho {
     public static Carrinho carrinho;
-    private static ArrayList<Object> produtos;
+    private static ArrayList<Produto> produtos;
     private static double valorTotal;
 
     public Carrinho() {
-        produtos = new ArrayList<>();
+        produtos = new ArrayList<Produto>();
         Carrinho.valorTotal = 0;
     }
 
-    public void adicionaProduto(Produto produto) {
+    public static void adicionaProduto(Produto produto) {
         produtos.add(produto);
         System.out.println("O " + produto.getNome() + " foi adicionado com sucesso!");
     }

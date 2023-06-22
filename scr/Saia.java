@@ -25,4 +25,8 @@ public class Saia extends Roupa {
     public void setFenda(boolean fenda) {
         this.fenda = fenda;
     }
+
+    public Produto get(int index) {
+        return null;
+    }
 }

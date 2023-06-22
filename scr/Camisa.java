@@ -24,4 +24,8 @@ public class Camisa extends Roupa{
     public void setGola(boolean gola){
         this.gola = gola;
     }
+
+    public Produto get(int index) {
+        return null;
+    }
 }

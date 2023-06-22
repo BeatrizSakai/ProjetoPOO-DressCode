@@ -14,4 +14,8 @@ public class Calca extends Roupa{
     public void setModelo(String modelo) {
         this.modelo = modelo; 
     }
+
+    public Produto get(int index) {
+        return null;
+    }
 }

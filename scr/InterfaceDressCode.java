@@ -5,6 +5,8 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -118,24 +120,25 @@ public class InterfaceDressCode extends JFrame {
 
 
 
-            JButton botaoComprarVestido = new JButton("Comprar");
-            final int index = i;
-            botaoComprarVestido.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    Produto produto = vestidos.get(index);
-                    Carrinho.add(produto);
-                    System.out.println("Produto adicionado ao carrinho: " + produto.getNome());
-                }
-            });
-            painelInformacoesVestido.add(botaoComprarVestido);
+        JButton botaoComprarVestido = new JButton("Comprar");
+        final int index = i;
+        botaoComprarVestido.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Produto produto = vestidos.get(index);
+                Carrinho.add(produto);
+                System.out.println("Produto adicionado ao carrinho: Vestido ");
+            }
+        });
+            
 
             JPanel painelCompleto = new JPanel(new BorderLayout());
             painelCompleto.add(labelVestido, BorderLayout.CENTER);
             painelCompleto.add(painelInformacoesVestido, BorderLayout.SOUTH);
-
+            painelInformacoesVestido.add(botaoComprarVestido);
             painelVestidos.add(painelCompleto);
         }
+        
         painelPrincipal.add(painelVestidos);
 
         JPanel painelCalcas = new JPanel();
@@ -151,8 +154,16 @@ public class InterfaceDressCode extends JFrame {
             painelInformacoesCalca.add(new JLabel("R$" + calca.getPreco()));
             painelInformacoesCalca.add(new JLabel(""));
 
-            JButton botaoComprarCalca = new JButton("Comprar");
-            painelInformacoesCalca.add(botaoComprarCalca);
+        JButton botaoComprarCalca = new JButton("Comprar");
+        final int index = i;
+        botaoComprarCalca.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Produto produto = calca.get(index);
+                Carrinho.add(produto);
+                System.out.println("Produto adicionado ao carrinho: Calça ");
+            }
+        });
 
             JPanel painelCompleto = new JPanel(new BorderLayout());
             painelCompleto.add(labelCalca, BorderLayout.CENTER);
@@ -177,6 +188,15 @@ public class InterfaceDressCode extends JFrame {
 
             JButton botaoComprarCamisa = new JButton("Comprar");
             painelInformacoesCamisa.add(botaoComprarCamisa);
+            final int index = i;
+            botaoComprarCamisa.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Produto produto = camisa.get(index);
+                Carrinho.add(produto);
+                System.out.println("Produto adicionado ao carrinho: Camisa ");
+            }
+        });
 
             JPanel painelCompleto = new JPanel(new BorderLayout());
             painelCompleto.add(labelCamisa, BorderLayout.CENTER);
@@ -201,6 +221,15 @@ public class InterfaceDressCode extends JFrame {
 
             JButton botaoComprarSaia = new JButton("Comprar");
             painelInformacoesSaia.add(botaoComprarSaia);
+            final int index = i;
+            botaoComprarSaia.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Produto produto = saia.get(index);
+                Carrinho.add(produto);
+                System.out.println("Produto adicionado ao carrinho: Saia ");
+            }
+        });
 
             JPanel painelCompleto = new JPanel(new BorderLayout());
             painelCompleto.add(labelSaia, BorderLayout.CENTER);
@@ -312,12 +341,18 @@ public class InterfaceDressCode extends JFrame {
         add(scrollPane);
 
         setVisible(true);
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                Carrinho carrinho = new Carrinho();   
+                carrinho.finalizarCompra();
+            }
+        });
     }
 
     public static void main(String[] args) {
          
         new InterfaceDressCode();
-        Carrinho carrinho = new Carrinho();
-        carrinho.finalizarCompra();;
     }
 }
