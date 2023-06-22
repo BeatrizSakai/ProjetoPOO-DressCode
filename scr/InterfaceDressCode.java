@@ -3,6 +3,8 @@ package scr;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +35,7 @@ public class InterfaceDressCode extends JFrame {
     private List<JLabel> labelPulseiras;
     private List<Sandalia> sandalias;
     private List<JLabel> labelSandalias;
+    private int i;
 
     
     public InterfaceDressCode() {
@@ -62,7 +65,7 @@ public class InterfaceDressCode extends JFrame {
         camisas.add(new Camisa("Blusa Inverno", "Azul", "P", 85.00, "Manga Longa", false, "imagens\\blusazul.png", "Camisa Azul Inverno"));
         labelCamisas = new ArrayList<>();
 
-        List<Saia> saias = new ArrayList<>();
+        saias = new ArrayList<>();
         saias.add(new Saia("Saia Fenda", "Verde", "P", 80.00, "Curta", true, "Saia Verde com Fenda", "imagens\\saiafenda.png"));
         saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, "Média", false, "Saia Floral", "imagens\\saiafloral.png"));
         saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, "Curta", true, "Saia Couro", "imagens\\saiacouro.png"));
@@ -90,12 +93,12 @@ public class InterfaceDressCode extends JFrame {
         pulseiras.add(new Pulseira("Pulseira de Couro", "Marrom", 40.00, "Couro", "Fecho Magnético", false, "imagens\\pulseiraprata.png", "Pulseira Dupla de Prata"));
         labelPulseiras = new ArrayList<>();
 
-            sandalias = new ArrayList<>();
-            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Marrom Claro", 89.90, "Tiras", "Rasteiro","imagens\\sandaliarasteira1.png","Sandalia Rasteira Casual"));
-            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","imagens\\sandaliasalto.png", "Sandalia Salto Alto Elegante"));
-            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Preto", 89.90, "Tiras", "Rasteiro","imagens\\sandalia_rasteira.png","Sandalia Rasteira Confortável"));
-            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","imagens\\sandalia_salto_alto.png", "Sandalia Salto Alto Elegante"));
-            labelSandalias = new ArrayList<>();
+        sandalias = new ArrayList<>();
+        sandalias.add(new Sandalia("Sandalia Rasteira", "Marrom Claro", 36, 89.90, "Tiras", "Rasteiro","imagens\\sandaliarasteira1.png","Sandalia Rasteira Casual"));
+        sandalias.add(new Sandalia("Sandalia Salto Alto", "Vermelho", 38, 159.90, "Tiras", "Alto","imagens\\sandaliasalto.png", "Sandalia Salto Alto Elegante"));
+        sandalias.add(new Sandalia("Sandalia Rasteira", "Preto", 36, 89.90, "Tiras", "Rasteiro","imagens\\sandaliarasteira.png","Sandalia Rasteira Confortável"));
+        sandalias.add(new Sandalia("Sandalia Salto Alto", "Vermelho", 38, 159.90, "Tiras", "Alto","imagens\\sandaliasalto1.png", "Sandalia Salto Alto Elegante"));
+        labelSandalias = new ArrayList<>();
 
         JPanel painelPrincipal = new JPanel();
         painelPrincipal.setLayout(new BoxLayout(painelPrincipal, BoxLayout.PAGE_AXIS));
@@ -113,7 +116,18 @@ public class InterfaceDressCode extends JFrame {
             painelInformacoesVestido.add(new JLabel("R$" + vestido.getPreco()));
             painelInformacoesVestido.add(new JLabel(""));
 
+
+
             JButton botaoComprarVestido = new JButton("Comprar");
+            final int index = i;
+            botaoComprarVestido.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    Produto produto = vestidos.get(index);
+                    Carrinho.add(produto);
+                    System.out.println("Produto adicionado ao carrinho: " + produto.getNome());
+                }
+            });
             painelInformacoesVestido.add(botaoComprarVestido);
 
             JPanel painelCompleto = new JPanel(new BorderLayout());
@@ -270,14 +284,13 @@ public class InterfaceDressCode extends JFrame {
 
                 JPanel painelSandalias = new JPanel();
         painelSandalias.setLayout(new FlowLayout(FlowLayout.LEFT));
-
         for (Sandalia sandalia : sandalias) {
             JLabel labelSandalia = new JLabel(new ImageIcon(sandalia.getImagem()));
             labelSandalia.setHorizontalAlignment(SwingConstants.CENTER);
             labelSandalias.add(labelSandalia);
 
             JPanel painelInformacoesSandalia = new JPanel();
-            painelInformacoesSandalia.setLayout(new GridLayout(3, 1));
+            painelInformacoesSandalia.setLayout(new GridLayout(4, 1));
             painelInformacoesSandalia.add(new JLabel(sandalia.getDescricao()));
             painelInformacoesSandalia.add(new JLabel("R$" + sandalia.getPreco()));
             painelInformacoesSandalia.add(new JLabel(""));
@@ -302,6 +315,9 @@ public class InterfaceDressCode extends JFrame {
     }
 
     public static void main(String[] args) {
+         
         new InterfaceDressCode();
+        Carrinho carrinho = new Carrinho();
+        carrinho.finalizarCompra();;
     }
 }
