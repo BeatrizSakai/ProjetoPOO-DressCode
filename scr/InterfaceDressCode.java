@@ -55,11 +55,12 @@ public class InterfaceDressCode extends JFrame {
         labelCamisas = new ArrayList<>();
 
         List<Saia> saias = new ArrayList<>();
-        saias.add(new Saia("Saia Fenda", "Verde", "P", 80.00, 10, true, "Saia Verde com Fenda", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafenda.png"));
-        saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, 20, false, "Saia Floral", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafloral.png"));
-        saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, 15, true, "Saia Couro", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiacouro.png"));
-        saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, 30, false, "Saia Rodada Xadrez", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiarodada.png"));
+        saias.add(new Saia("Saia Fenda", "Verde", "P", 80.00, "Curta", true, "Saia Verde com Fenda", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafenda.png"));
+        saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, "Média", false, "Saia Floral", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafloral.png"));
+        saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, "Curta", true, "Saia Couro", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiacouro.png"));
+        saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, "Longa", false, "Saia Rodada Xadrez", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiarodada.png"));
         labelSaias = new ArrayList<>();
+
 
 
 
