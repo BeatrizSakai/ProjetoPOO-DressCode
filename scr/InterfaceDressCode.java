@@ -25,8 +25,16 @@ public class InterfaceDressCode extends JFrame {
     private List<JLabel> labelCamisas;
     private List<Saia> saias;
     private List<JLabel> labelSaias;
+    private List<Colar> colares;
+    private List<JLabel> labelColares;
+    private List<Brinco> brincos;
+    private List<JLabel> labelBrincos;
+    private List<Pulseira> pulseiras;
+    private List<JLabel> labelPulseiras;
+    private List<Sandalia> sandalias;
+    private List<JLabel> labelSandalias;
 
-
+    
     public InterfaceDressCode() {
         setTitle("DRESSCODE");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,8 +69,33 @@ public class InterfaceDressCode extends JFrame {
         saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, "Longa", false, "Saia Rodada Xadrez", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiarodada.png"));
         labelSaias = new ArrayList<>();
 
+        colares = new ArrayList<>();
+        colares.add(new Colar("Colar Prata", "Prateado", 60.00, "Prata", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colarprata.png", "Colar Prata com Brilhante"));
+        colares.add(new Colar("Colar Sourado", "Dourado", 40.00, "Malha", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colardourado.png", "Colar Dourado em Malha"));
+        colares.add(new Colar("Colar Perola", "Perolado", 70.00, "Perola", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colarperola.png", "Colar Prateado Elegante"));
+        colares.add(new Colar("Colar Strass", "Brilhante", 35.00, "Strass", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colarstrass.png", "Gargantilha Strass"));
+        labelColares = new ArrayList<>();
 
+        brincos = new ArrayList<>();
+        brincos.add(new Brinco("Brinco de Pérola", "Branco", 30.00, "Perola", "Clássico", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincoperola.png", "Brinco de Pérola Clássico"));
+        brincos.add(new Brinco("Brinco de Argola", "Dourado", 35.00, "Metal", "Argola", true,"C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincodourado.png" , "Brinco Argola Sobreposta Dourada"));
+        brincos.add(new Brinco("Brinco de Pérola", "Branco", 50.00, "Ouro", "Argola", true,"C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincoprata.png" , "Brinco Argola Moderno Prata"));
+        brincos.add(new Brinco("Brinco de Argola", "Brilhante", 40.00, "Metal", "Malha Strass", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincostrass.png", "Brinco de Malha Strass"));
+        labelBrincos = new ArrayList<>();
 
+        pulseiras = new ArrayList<>();
+        pulseiras.add(new Pulseira("Pulseira Brilhante", "Prata", 150.00, "Prata", "Pingentes", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseirabrilhante.png", "Pulseira De Brilhante"));
+        pulseiras.add(new Pulseira("Pulseira Ouro", "Dourado", 90.00, "Ouro", "Banhado a ouro", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseiradourada.png", " Pulseira Dupla Banhada a ouro"));
+        pulseiras.add(new Pulseira("Pulseira de Perola", "Branco", 60.00, "Perola", "Perolas", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseiraperola.png", "Pulseira de Perola"));
+        pulseiras.add(new Pulseira("Pulseira de Couro", "Marrom", 40.00, "Couro", "Fecho Magnético", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseiraprata.png", "Pulseira Dupla de Prata"));
+        labelPulseiras = new ArrayList<>();
+
+            sandalias = new ArrayList<>();
+            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Marrom Claro", 89.90, "Tiras", "Rasteiro","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\sandaliarasteira1.png","Sandalia Rasteira Casual"));
+            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\sandaliasalto.png", "Sandalia Salto Alto Elegante"));
+            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Preto", 89.90, "Tiras", "Rasteiro","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\sandalia_rasteira.png","Sandalia Rasteira Confortável"));
+            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\sandalia_salto_alto.png", "Sandalia Salto Alto Elegante"));
+            labelSandalias = new ArrayList<>();
 
         JPanel painelPrincipal = new JPanel();
         painelPrincipal.setLayout(new BoxLayout(painelPrincipal, BoxLayout.PAGE_AXIS));
@@ -162,6 +195,105 @@ public class InterfaceDressCode extends JFrame {
             painelSaias.add(painelCompleto);
         }
         painelPrincipal.add(painelSaias);
+
+                JPanel painelColares = new JPanel();
+        painelColares.setLayout(new FlowLayout(FlowLayout.LEFT));
+        for (Colar colar : colares) {
+            JLabel labelColar = new JLabel(new ImageIcon(colar.getImagem()));
+            labelColar.setHorizontalAlignment(SwingConstants.CENTER);
+            labelColares.add(labelColar);
+
+            JPanel painelInformacoesColar = new JPanel();
+            painelInformacoesColar.setLayout(new GridLayout(4, 1));
+            painelInformacoesColar.add(new JLabel(colar.getDescricao()));
+            painelInformacoesColar.add(new JLabel("R$" + colar.getPreco()));
+            painelInformacoesColar.add(new JLabel(""));
+
+            JButton botaoComprarColar = new JButton("Comprar");
+            painelInformacoesColar.add(botaoComprarColar);
+
+            JPanel painelCompleto = new JPanel(new BorderLayout());
+            painelCompleto.add(labelColar, BorderLayout.CENTER);
+            painelCompleto.add(painelInformacoesColar, BorderLayout.SOUTH);
+
+            painelColares.add(painelCompleto);
+        }
+        painelPrincipal.add(painelColares);
+
+                JPanel painelBrincos = new JPanel();
+        painelBrincos.setLayout(new FlowLayout(FlowLayout.LEFT));
+        for (Brinco brinco : brincos) {
+            JLabel labelBrinco = new JLabel(new ImageIcon(brinco.getImagem()));
+            labelBrinco.setHorizontalAlignment(SwingConstants.CENTER);
+            labelBrincos.add(labelBrinco);
+
+            JPanel painelInformacoesBrinco = new JPanel();
+            painelInformacoesBrinco.setLayout(new GridLayout(4, 1));
+            painelInformacoesBrinco.add(new JLabel(brinco.getDescricao()));
+            painelInformacoesBrinco.add(new JLabel("R$" + brinco.getPreco()));
+            painelInformacoesBrinco.add(new JLabel(""));
+
+            JButton botaoComprarBrinco = new JButton("Comprar");
+            painelInformacoesBrinco.add(botaoComprarBrinco);
+
+            JPanel painelCompleto = new JPanel(new BorderLayout());
+            painelCompleto.add(labelBrinco, BorderLayout.CENTER);
+            painelCompleto.add(painelInformacoesBrinco, BorderLayout.SOUTH);
+
+            painelBrincos.add(painelCompleto);
+        }
+        painelPrincipal.add(painelBrincos);
+
+                JPanel painelPulseiras = new JPanel();
+        painelPulseiras.setLayout(new FlowLayout(FlowLayout.LEFT));
+        for (Pulseira pulseira : pulseiras) {
+            JLabel labelPulseira = new JLabel(new ImageIcon(pulseira.getImagem()));
+            labelPulseira.setHorizontalAlignment(SwingConstants.CENTER);
+            labelPulseiras.add(labelPulseira);
+
+            JPanel painelInformacoesPulseira = new JPanel();
+            painelInformacoesPulseira.setLayout(new GridLayout(4, 1));
+            painelInformacoesPulseira.add(new JLabel(pulseira.getDescricao()));
+            painelInformacoesPulseira.add(new JLabel("R$" + pulseira.getPreco()));
+            painelInformacoesPulseira.add(new JLabel(""));
+
+            JButton botaoComprarPulseira = new JButton("Comprar");
+            painelInformacoesPulseira.add(botaoComprarPulseira);
+
+            JPanel painelCompleto = new JPanel(new BorderLayout());
+            painelCompleto.add(labelPulseira, BorderLayout.CENTER);
+            painelCompleto.add(painelInformacoesPulseira, BorderLayout.SOUTH);
+
+            painelPulseiras.add(painelCompleto);
+        }
+        painelPrincipal.add(painelPulseiras);
+
+                JPanel painelSandalias = new JPanel();
+        painelSandalias.setLayout(new FlowLayout(FlowLayout.LEFT));
+
+        for (Sandalia sandalia : sandalias) {
+            JLabel labelSandalia = new JLabel(new ImageIcon(sandalia.getImagem()));
+            labelSandalia.setHorizontalAlignment(SwingConstants.CENTER);
+            labelSandalias.add(labelSandalia);
+
+            JPanel painelInformacoesSandalia = new JPanel();
+            painelInformacoesSandalia.setLayout(new GridLayout(3, 1));
+            painelInformacoesSandalia.add(new JLabel(sandalia.getDescricao()));
+            painelInformacoesSandalia.add(new JLabel("R$" + sandalia.getPreco()));
+            painelInformacoesSandalia.add(new JLabel(""));
+
+            JButton botaoComprarSandalia = new JButton("Comprar");
+            painelInformacoesSandalia.add(botaoComprarSandalia);
+
+            JPanel painelCompleto = new JPanel(new BorderLayout());
+            painelCompleto.add(labelSandalia, BorderLayout.CENTER);
+            painelCompleto.add(painelInformacoesSandalia, BorderLayout.SOUTH);
+
+            painelSandalias.add(painelCompleto);
+        }
+        
+        painelPrincipal.add(painelSandalias);
+
 
         JScrollPane scrollPane = new JScrollPane(painelPrincipal);
         add(scrollPane);
