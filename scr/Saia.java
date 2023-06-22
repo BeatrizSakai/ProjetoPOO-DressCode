@@ -1,20 +1,20 @@
 package scr;
 
 public class Saia extends Roupa {
-    private int comprimento;
+    private String comprimento;
     private boolean fenda;
 
-    public Saia(String nome, String cor, String tamanho, double preco, int comprimento, boolean fenda, String descricao, String imagem) {
+    public Saia(String nome, String cor, String tamanho, double preco, String comprimento, boolean fenda, String descricao, String imagem) {
         super(nome,cor, preco, tamanho, imagem, descricao);
         this.comprimento = comprimento;
         this.fenda = fenda;
     }
 
-    public int getComprimento() {
+    public String getComprimento() {
         return comprimento;
     }
 
-    public void setComprimento(int comprimento) {
+    public void setComprimento(String comprimento) {
         this.comprimento = comprimento;
     }
 
