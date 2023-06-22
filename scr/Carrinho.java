@@ -21,12 +21,15 @@ public class Carrinho {
         for (var produto: produtos) {
             valorTotal += ((Produto) produto).getPreco();
         }
-        System.out.println("o valor da sua compra é: " + valorTotal);
         return valorTotal;
     }
 
     public void finalizarCompra(){
         System.out.println("Compra finalizada!");
+        System.out.println("Produtos no carrinho: " + produtos);
+    }
+
+    public static void add(Produto produto) {
     }
     
 }
