@@ -34,32 +34,34 @@ public class InterfaceDressCode extends JFrame {
         setLocationRelativeTo(null);
 
         vestidos = new ArrayList<>();
-        vestidos.add(new Vestido("Vestido Branco", "Branco", "P", 150.00, "Curto", true, "Decote U", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\vestidobranco.png", "Vestido branco manga longa"));
-        vestidos.add(new Vestido("Vestido Branco", "Branco", "M", 180.00, "Comprido", false, "Decote V", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\vestidolongo.png", "Vestido Barnco Casual"));
-        vestidos.add(new Vestido("Vestido Preto", "PReto", "M", 100.00, "Curto", true, "Decote V", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\vestidopreto.png", "Vestido Preto Festa"));
-        vestidos.add(new Vestido("Vestido Rosa", "Rosa", "G", 120.00, "Curto", true, "Decote V","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\vestidorosa.png", "Vestido Rosa Elegante"));
+        vestidos.add(new Vestido("Vestido Branco", "Branco", "P", 150.00, "Curto", true, "Decote U", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidobranco.png", "Vestido branco manga longa"));
+        vestidos.add(new Vestido("Vestido Branco", "Branco", "M", 180.00, "Comprido", false, "Decote V", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidolongo.png", "Vestido Bnco Casual"));
+        vestidos.add(new Vestido("Vestido Preto", "PReto", "M", 100.00, "Curto", true, "Decote V", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidopreto.png", "Vestido Preto Festa"));
+        vestidos.add(new Vestido("Vestido Rosa", "Rosa", "G", 120.00, "Curto", true, "Decote V","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidorosa.png", "Vestido Rosa Elegante"));
         labelVestidos = new ArrayList<>();
 
         calcas = new ArrayList<>();
-        calcas.add(new Calca("Calça Jeans", "Azul", "P", 120.00, " Mom", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\calcamom.png", "Calça Mom"));
-        calcas.add(new Calca("Calça Social", "Azul", "M", 180.00, "Corte Reto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\calcasocial.png", "Calça Social Elegante"));
-        calcas.add(new Calca("Calça Jeans", "Azul", "P", 140.00, "Skin", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\calcaskin.png", "Calça Jeans Skin"));
-        calcas.add(new Calca("Calça Wide Leg", "Preto", "M", 150.00, "Corte Reto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\calcawide.png", "Calça Wide Leg"));
+        calcas.add(new Calca("Calça Jeans", "Azul", "P", 120.00, " Mom", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcamom.png", "Calça Mom"));
+        calcas.add(new Calca("Calça Social", "Azul", "M", 180.00, "Corte Reto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcasocial.png", "Calça Social Elegante"));
+        calcas.add(new Calca("Calça Jeans", "Azul", "P", 140.00, "Skin", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcaskin.png", "Calça Jeans Skin"));
+        calcas.add(new Calca("Calça Wide Leg", "Preto", "M", 150.00, "Corte Reto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcawide.png", "Calça Wide Leg"));
         labelCalcas = new ArrayList<>();
 
         camisas = new ArrayList<>();
-        camisas.add(new Camisa("Camisa Branca", "Branca", "M", 80.00, "Manga Longa", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\blusabranca.png", "Camisa Branca Clássica"));
-        camisas.add(new Camisa("Camisa Verde", "verde", "P", 90.00, "Manga Curta", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\blusaverde.png", "Camisa Verde Casual"));
-        camisas.add(new Camisa("Camisa Rosa", "Rosa", "G", 75.00, "Manga Curta", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\blusarosa.png", "Camisa Rosa Casual "));
-        camisas.add(new Camisa("Camisa Listrada", "Preto e Branco", "P", 85.00, "Manga Longa", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\blusazul.png", "Camisa Azul Inverno"));
+        camisas.add(new Camisa("Camisa Branca", "Branca", "M", 80.00, "Manga Longa", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusabranca.png", "Camisa Branca Clássica"));
+        camisas.add(new Camisa("Camisa Verde", "verde", "P", 90.00, "Manga Curta", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusaverde.png", "Camisa Verde Casual"));
+        camisas.add(new Camisa("Camisa Rosa", "Rosa", "G", 75.00, "Manga Curta", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusarosa.png", "Camisa Rosa Casual "));
+        camisas.add(new Camisa("Blusa Inverno", "Azul", "P", 85.00, "Manga Longa", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusazul.png", "Camisa Azul Inverno"));
         labelCamisas = new ArrayList<>();
 
-        saias = new ArrayList<>();
-        saias.add(new Saia("Saia Fenda", "Jeans", "P", 60.00, "Curta", rootPaneCheckingEnabled, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\saiafenda.png", "Saia Fenda Verde"));
-        saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, "Comprido", rootPaneCheckingEnabled, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\saiafloral.png", "Saia Floral"));
-        saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, "Curta", rootPaneCheckingEnabled, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\saiacouro.png", "Saia Couro Preta"));
-        saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, "Rodada", rootPaneCheckingEnabled, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\saiarodada.png", "Saia Rodada Xadrez"));
+        List<Saia> saias = new ArrayList<>();
+        saias.add(new Saia("Saia Fenda", "Verde", "P", 80.00, 10, true, "Saia Verde com Fenda", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafenda.png"));
+        saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, 20, false, "Saia Floral", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafloral.png"));
+        saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, 15, true, "Saia Couro", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiacouro.png"));
+        saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, 30, false, "Saia Rodada Xadrez", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiarodada.png"));
         labelSaias = new ArrayList<>();
+
+
 
         JPanel painelPrincipal = new JPanel();
         painelPrincipal.setLayout(new BoxLayout(painelPrincipal, BoxLayout.PAGE_AXIS));
