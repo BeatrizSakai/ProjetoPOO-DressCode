@@ -1,37 +1,27 @@
 package scr;
 
-public class pulseira extends Acessorio{
-    private String material;
+public class Pulseira extends Acessorio{
     private String ornamento;
     private boolean fecho;
 
-    public pulseira(String material, String ornamento, boolean fecho, double preco,String comprimento, String imagem){
-        super(material, ornamento, fecho, preco, imagem, descricao)
-        this.material = material;
+    public Pulseira(String nome, String cor,double preco, String material, String ornamento, boolean fecho,String imagem, String descricao){
+        super(nome, cor,preco, material,imagem, descricao);
         this.ornamento = ornamento;
         this.fecho = fecho;
-    }
-
-    public String getMaterial(){
-        return material;
-    }
-
-    public String setMaterial(String material){
-        this.material = material;
     }
 
     public String getOrnamento(){
         return ornamento;
     }
 
-    public String setOrnamento(String ornamento){
+    public void setOrnamento(String ornamento){
         this.ornamento = ornamento;
     }
 
-    public boolean hasFecho(){
-        return fecho;
-    }
+    public boolean getFecho(boolean fecho) {
+    this.fecho = fecho;
+    return this.fecho;
+}
 
-    public boolean getFecho(boolean fecho){
-        this.fecho = fecho;
-    }
+
+}
