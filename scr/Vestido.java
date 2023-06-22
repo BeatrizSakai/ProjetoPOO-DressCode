@@ -4,7 +4,7 @@ public class Vestido extends Roupa{
     private boolean manga;
     private String tipo_decote; 
 
-    public Vestido(String nome,String cor, double preco,String tamanho, String comprimento, boolean manga, String tipo_decote, String imagem, String descricao){
+    public Vestido(String nome,String cor, String tamanho,double preco, String comprimento, boolean manga, String tipo_decote, String imagem, String descricao){
         super(nome,cor, preco, tamanho,imagem, descricao);
         this.comprimento = comprimento;
         this.manga = manga;
