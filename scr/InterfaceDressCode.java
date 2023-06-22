@@ -42,59 +42,59 @@ public class InterfaceDressCode extends JFrame {
         setLocationRelativeTo(null);
 
         vestidos = new ArrayList<>();
-        vestidos.add(new Vestido("Vestido Branco", "Branco", "P", 150.00, "Curto", true, "Decote U", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidobranco.png", "Vestido branco manga longa"));
-        vestidos.add(new Vestido("Vestido Branco", "Branco", "M", 180.00, "Comprido", false, "Decote V", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidolongo.png", "Vestido Bnco Casual"));
-        vestidos.add(new Vestido("Vestido Preto", "PReto", "M", 100.00, "Curto", true, "Decote V", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidopreto.png", "Vestido Preto Festa"));
-        vestidos.add(new Vestido("Vestido Rosa", "Rosa", "G", 120.00, "Curto", true, "Decote V","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\vestidorosa.png", "Vestido Rosa Elegante"));
+        vestidos.add(new Vestido("Vestido Branco", "Branco", "P", 150.00, "Curto", true, "Decote U", "imagens\\blusabranca.png", "Vestido branco manga longa"));
+        vestidos.add(new Vestido("Vestido Branco", "Branco", "M", 180.00, "Comprido", false, "Decote V", "imagens\\vestidolongo.png", "Vestido Bnco Casual"));
+        vestidos.add(new Vestido("Vestido Preto", "PReto", "M", 100.00, "Curto", true, "Decote V", "imagens\\vestidopreto.png", "Vestido Preto Festa"));
+        vestidos.add(new Vestido("Vestido Rosa", "Rosa", "G", 120.00, "Curto", true, "Decote V","imagens\\vestidorosa.png", "Vestido Rosa Elegante"));
         labelVestidos = new ArrayList<>();
 
         calcas = new ArrayList<>();
-        calcas.add(new Calca("Calça Jeans", "Azul", "P", 120.00, " Mom", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcamom.png", "Calça Mom"));
-        calcas.add(new Calca("Calça Social", "Azul", "M", 180.00, "Corte Reto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcasocial.png", "Calça Social Elegante"));
-        calcas.add(new Calca("Calça Jeans", "Azul", "P", 140.00, "Skin", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcaskin.png", "Calça Jeans Skin"));
-        calcas.add(new Calca("Calça Wide Leg", "Preto", "M", 150.00, "Corte Reto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\calcawide.png", "Calça Wide Leg"));
+        calcas.add(new Calca("Calça Jeans", "Azul", "P", 120.00, " Mom", "imagens\\calcamom.png", "Calça Mom"));
+        calcas.add(new Calca("Calça Social", "Azul", "M", 180.00, "Corte Reto", "imagens\\calcasocial.png", "Calça Social Elegante"));
+        calcas.add(new Calca("Calça Jeans", "Azul", "P", 140.00, "Skin", "imagens\\calcaskin.png", "Calça Jeans Skin"));
+        calcas.add(new Calca("Calça Wide Leg", "Preto", "M", 150.00, "Corte Reto", "imagens\\calcawide.png", "Calça Wide Leg"));
         labelCalcas = new ArrayList<>();
 
         camisas = new ArrayList<>();
-        camisas.add(new Camisa("Camisa Branca", "Branca", "M", 80.00, "Manga Longa", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusabranca.png", "Camisa Branca Clássica"));
-        camisas.add(new Camisa("Camisa Verde", "verde", "P", 90.00, "Manga Curta", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusaverde.png", "Camisa Verde Casual"));
-        camisas.add(new Camisa("Camisa Rosa", "Rosa", "G", 75.00, "Manga Curta", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusarosa.png", "Camisa Rosa Casual "));
-        camisas.add(new Camisa("Blusa Inverno", "Azul", "P", 85.00, "Manga Longa", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\blusazul.png", "Camisa Azul Inverno"));
+        camisas.add(new Camisa("Camisa Branca", "Branca", "M", 80.00, "Manga Longa", false, "imagens\\blusabranca.png", "Camisa Branca Clássica"));
+        camisas.add(new Camisa("Camisa Verde", "verde", "P", 90.00, "Manga Curta", false, "imagens\\blusaverde.png", "Camisa Verde Casual"));
+        camisas.add(new Camisa("Camisa Rosa", "Rosa", "G", 75.00, "Manga Curta", false, "imagens\\blusarosa.png", "Camisa Rosa Casual "));
+        camisas.add(new Camisa("Blusa Inverno", "Azul", "P", 85.00, "Manga Longa", false, "imagens\\blusazul.png", "Camisa Azul Inverno"));
         labelCamisas = new ArrayList<>();
 
         List<Saia> saias = new ArrayList<>();
-        saias.add(new Saia("Saia Fenda", "Verde", "P", 80.00, "Curta", true, "Saia Verde com Fenda", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafenda.png"));
-        saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, "Média", false, "Saia Floral", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiafloral.png"));
-        saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, "Curta", true, "Saia Couro", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiacouro.png"));
-        saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, "Longa", false, "Saia Rodada Xadrez", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\saiarodada.png"));
+        saias.add(new Saia("Saia Fenda", "Verde", "P", 80.00, "Curta", true, "Saia Verde com Fenda", "imagens\\saiafenda.png"));
+        saias.add(new Saia("Saia Floral", "Colorido", "M", 75.00, "Média", false, "Saia Floral", "imagens\\saiafloral.png"));
+        saias.add(new Saia("Saia Couro", "Preto", "G", 90.00, "Curta", true, "Saia Couro", "imagens\\saiacouro.png"));
+        saias.add(new Saia("Saia Rodada", "Marrom", "G", 80.00, "Longa", false, "Saia Rodada Xadrez", "imagens\\saiarodada.png"));
         labelSaias = new ArrayList<>();
 
         colares = new ArrayList<>();
-        colares.add(new Colar("Colar Prata", "Prateado", 60.00, "Prata", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colarprata.png", "Colar Prata com Brilhante"));
-        colares.add(new Colar("Colar Sourado", "Dourado", 40.00, "Malha", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colardourado.png", "Colar Dourado em Malha"));
-        colares.add(new Colar("Colar Perola", "Perolado", 70.00, "Perola", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colarperola.png", "Colar Prateado Elegante"));
-        colares.add(new Colar("Colar Strass", "Brilhante", 35.00, "Strass", "Curto", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\colarstrass.png", "Gargantilha Strass"));
+        colares.add(new Colar("Colar Prata", "Prateado", 60.00, "Prata", "Curto", "imagens\\colarprata.png", "Colar Prata com Brilhante"));
+        colares.add(new Colar("Colar Sourado", "Dourado", 40.00, "Malha", "Curto", "imagens\\colardourado.png", "Colar Dourado em Malha"));
+        colares.add(new Colar("Colar Perola", "Perolado", 70.00, "Perola", "Curto", "imagens\\colarperola.png", "Colar Prateado Elegante"));
+        colares.add(new Colar("Colar Strass", "Brilhante", 35.00, "Strass", "Curto", "imagens\\colarstrass.png", "Gargantilha Strass"));
         labelColares = new ArrayList<>();
 
         brincos = new ArrayList<>();
-        brincos.add(new Brinco("Brinco de Pérola", "Branco", 30.00, "Perola", "Clássico", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincoperola.png", "Brinco de Pérola Clássico"));
-        brincos.add(new Brinco("Brinco de Argola", "Dourado", 35.00, "Metal", "Argola", true,"C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincodourado.png" , "Brinco Argola Sobreposta Dourada"));
-        brincos.add(new Brinco("Brinco de Pérola", "Branco", 50.00, "Ouro", "Argola", true,"C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincoprata.png" , "Brinco Argola Moderno Prata"));
-        brincos.add(new Brinco("Brinco de Argola", "Brilhante", 40.00, "Metal", "Malha Strass", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\brincostrass.png", "Brinco de Malha Strass"));
+        brincos.add(new Brinco("Brinco de Pérola", "Branco", 30.00, "Perola", "Clássico", true, "imagens\\brincoperola.png", "Brinco de Pérola Clássico"));
+        brincos.add(new Brinco("Brinco de Argola", "Dourado", 35.00, "Metal", "Argola", true,"imagens\\brincodourado.png" , "Brinco Argola Sobreposta Dourada"));
+        brincos.add(new Brinco("Brinco de Pérola", "Branco", 50.00, "Ouro", "Argola", true,"imagens\\brincoprata.png" , "Brinco Argola Moderno Prata"));
+        brincos.add(new Brinco("Brinco de Argola", "Brilhante", 40.00, "Metal", "Malha Strass", true, "imagens\\brincostrass.png", "Brinco de Malha Strass"));
         labelBrincos = new ArrayList<>();
 
         pulseiras = new ArrayList<>();
-        pulseiras.add(new Pulseira("Pulseira Brilhante", "Prata", 150.00, "Prata", "Pingentes", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseirabrilhante.png", "Pulseira De Brilhante"));
-        pulseiras.add(new Pulseira("Pulseira Ouro", "Dourado", 90.00, "Ouro", "Banhado a ouro", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseiradourada.png", " Pulseira Dupla Banhada a ouro"));
-        pulseiras.add(new Pulseira("Pulseira de Perola", "Branco", 60.00, "Perola", "Perolas", true, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseiraperola.png", "Pulseira de Perola"));
-        pulseiras.add(new Pulseira("Pulseira de Couro", "Marrom", 40.00, "Couro", "Fecho Magnético", false, "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\pulseiraprata.png", "Pulseira Dupla de Prata"));
+        pulseiras.add(new Pulseira("Pulseira Brilhante", "Prata", 150.00, "Prata", "Pingentes", true, "imagens\\pulseirabrilhante.png", "Pulseira De Brilhante"));
+        pulseiras.add(new Pulseira("Pulseira Ouro", "Dourado", 90.00, "Ouro", "Banhado a ouro", true, "imagens\\pulseiradourada.png", " Pulseira Dupla Banhada a ouro"));
+        pulseiras.add(new Pulseira("Pulseira de Perola", "Branco", 60.00, "Perola", "Perolas", true, "imagens\\pulseiraperola.png", "Pulseira de Perola"));
+        pulseiras.add(new Pulseira("Pulseira de Couro", "Marrom", 40.00, "Couro", "Fecho Magnético", false, "imagens\\pulseiraprata.png", "Pulseira Dupla de Prata"));
         labelPulseiras = new ArrayList<>();
 
             sandalias = new ArrayList<>();
-            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Marrom Claro", 89.90, "Tiras", "Rasteiro","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\sandaliarasteira1.png","Sandalia Rasteira Casual"));
-            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\scr\\imagens\\sandaliasalto.png", "Sandalia Salto Alto Elegante"));
-            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Preto", 89.90, "Tiras", "Rasteiro","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\sandalia_rasteira.png","Sandalia Rasteira Confortável"));
-            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\DressCode-PjBL-8\\imagens\\sandalia_salto_alto.png", "Sandalia Salto Alto Elegante"));
+            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Marrom Claro", 89.90, "Tiras", "Rasteiro","imagens\\sandaliarasteira1.png","Sandalia Rasteira Casual"));
+            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","imagens\\sandaliasalto.png", "Sandalia Salto Alto Elegante"));
+            sandalias.add(new Sandalia("Sandalia Rasteira", 36, "Preto", 89.90, "Tiras", "Rasteiro","imagens\\sandalia_rasteira.png","Sandalia Rasteira Confortável"));
+            sandalias.add(new Sandalia("Sandalia Salto Alto", 38, "Vermelho", 159.90, "Tiras", "Alto","imagens\\sandalia_salto_alto.png", "Sandalia Salto Alto Elegante"));
             labelSandalias = new ArrayList<>();
 
         JPanel painelPrincipal = new JPanel();
