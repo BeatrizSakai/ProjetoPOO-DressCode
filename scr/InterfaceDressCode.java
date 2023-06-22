@@ -38,6 +38,7 @@ public class InterfaceDressCode extends JFrame {
     private int i;
     private List<Bota> botas;
     private List<JLabel> labelBotas;
+   
     
     public InterfaceDressCode() {
         setTitle("DRESSCODE");
@@ -101,11 +102,11 @@ public class InterfaceDressCode extends JFrame {
         sandalias.add(new Sandalia("Sandalia Salto Alto", "Vermelho", 38, 159.90, "Tiras", "Alto","imagens\\sandaliasalto1.png", "Sandalia Salto Alto Elegante"));
         labelSandalias = new ArrayList<>();
 
-        List<Bota> botas = new ArrayList<>();
+        botas = new ArrayList<>();
         botas.add(new Bota("Bota Branca", 37, "Branca", 200.00, "Cano Médio", "Alto", "imagens\\botabranca.png", "Bota Branca "));
         botas.add(new Bota("Coturno Branco", 36, "Branco", 250.00, "Cano Baixo", "Baixo", "imagens\\botacoturno.png", "Bota Preta Cano Médio"));
         botas.add(new Bota("Bota Preta", 37, "Preta", 300.00, "Cano Alto", "Baixo", "imagens\\botalonga.png", "Bota Preta Cano Médio"));
-        botas.add(new Bota("Bota Marrom", 35, "Marrom", 150.00, "Cano Médio", "Baixo", "C:\\Users\\emill\\Desktop\\Faculdade_2023\\Java POO\\ProjetoPOO-DressCode\\imagens\\botamarrom.png", "Bota Preta Cano Médio"));
+        botas.add(new Bota("Bota Marrom", 35, "Marrom", 150.00, "Cano Médio", "Baixo", "imagens\\botamarrom.png", "Bota Marrom Cano Médio"));
         labelBotas = new ArrayList<>();
 
         JPanel painelPrincipal = new JPanel();
@@ -342,14 +343,12 @@ public class InterfaceDressCode extends JFrame {
         painelPrincipal.add(painelBotas);
 
 
-                JScrollPane scrollPane = new JScrollPane(painelPrincipal);
-                add(scrollPane);
-
-                setVisible(true);
+        JScrollPane scrollPane = new JScrollPane(painelPrincipal);
+        add(scrollPane);
+          setVisible(true);
             }
 
     public static void main(String[] args) {
-         
         new InterfaceDressCode();
         Carrinho carrinho = new Carrinho();
         carrinho.finalizarCompra();;
